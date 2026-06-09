@@ -5,6 +5,12 @@ A MicroPython / [aioble](https://github.com/micropython/micropython-lib/tree/mas
 BLE-central driver for the H10's Polar Measurement Data (PMD) service, targeting
 the ESP32 family.
 
+![An M5Stack CoreS3 worn on a wrist, showing a Polar H10 heart rate of 70 bpm with a red heart icon, a breaths-per-minute estimate of 28, and a live green breathing waveform](docs/m5dashboard.jpeg)
+
+*The [`dashboard_cores3.py`](examples/dashboard_cores3.py) example: heart rate,
+a breaths/min estimate derived from the chest accelerometer, and a live
+breathing waveform — driven from an M5Stack CoreS3, no phone or computer.*
+
 ```
 pip / mip name:   micropython-polar-h10     ← what you install
 import name:      polar_h10                  ← what you type in code
