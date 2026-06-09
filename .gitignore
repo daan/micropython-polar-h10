@@ -1,0 +1,5 @@
+# Desktop dev environment (uv) — not part of the deployed package
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/

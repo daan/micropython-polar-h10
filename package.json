@@ -1,0 +1,12 @@
+{
+  "urls": [
+    ["polar_h10/__init__.py", "github:daan/micropython-polar-h10/polar_h10/__init__.py"],
+    ["polar_h10/pmd.py", "github:daan/micropython-polar-h10/polar_h10/pmd.py"],
+    ["polar_h10/central.py", "github:daan/micropython-polar-h10/polar_h10/central.py"],
+    ["polar_h10/resp.py", "github:daan/micropython-polar-h10/polar_h10/resp.py"]
+  ],
+  "deps": [
+    ["github:micropython/micropython-lib/micropython/bluetooth/aioble", "latest"]
+  ],
+  "version": "0.1.0"
+}

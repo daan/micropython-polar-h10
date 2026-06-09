@@ -1,0 +1,26 @@
+[project]
+name = "micropython-polar-h10"
+version = "0.1.0"
+description = "MicroPython/aioble BLE driver for the Polar H10 PMD accelerometer stream"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+
+# This is a MicroPython package; it is installed onto the device with `mip`
+# (see package.json), not pip. There is no Python build backend here, so uv is
+# told not to try to build/install the project itself - it only manages the
+# desktop development tools below.
+[tool.uv]
+package = false
+
+# Desktop-only tooling for developing and verifying the protocol core. None of
+# this is deployed to the board.
+[dependency-groups]
+dev = [
+    "bleak>=0.22",
+    "pytest>=8",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
